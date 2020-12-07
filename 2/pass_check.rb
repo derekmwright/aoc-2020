@@ -11,7 +11,6 @@ class Password
       @pos2 = matches[:pos2].to_i
       @char = matches[:char]
       @password = matches[:password]
-      @valid = self.valid?
     else
       return false
     end
