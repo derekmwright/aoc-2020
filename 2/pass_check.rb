@@ -3,25 +3,25 @@ class Password
 
   PASS_REGEX = /^(?<pos1>[\d]+)-(?<pos2>[\d]+)\s+(?<char>[\w]):\s(?<password>[\w]+)$/
 
-  attr_reader :pos1, :pos2, :char, :password
+  attr_reader :matches
 
   def initialize(line)
-    if matches = line.match(PASS_REGEX)
-      @pos1 = matches[:pos1].to_i
-      @pos2 = matches[:pos2].to_i
-      @char = matches[:char]
-      @password = matches[:password]
-    else
+    unless @matches = line.match(PASS_REGEX)
       return false
     end
   end
 
   def old_valid?
-    return @password.count(@char).between?(@pos1, @pos2)
+    return @matches[:password]
+      .count(@matches[:char])
+      .between?(@matches[:pos1].to_i, @matches[:pos2].to_i)
   end
 
   def valid?
-    return ((@password[@pos1-1] <=> @char) + (@password[@pos2-1] <=> @char)).abs == 1
+    return (
+      (@matches[:password][@matches[:pos1].to_i - 1] <=> @matches[:char]) +
+      (@matches[:password][@matches[:pos2].to_i - 1] <=> @matches[:char])
+    ).abs == 1
   end
 end
 
