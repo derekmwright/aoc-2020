@@ -5,7 +5,7 @@ def check(data, x, y, start_x=0, start_y=0, result='')
     result << data[loc_y][loc_x % data[loc_y].length]
     check(data, x, y, loc_x, loc_y, result)
   end
-  return result
+  result
 end
 
 forest = File.readlines('input.txt', chomp: true)
