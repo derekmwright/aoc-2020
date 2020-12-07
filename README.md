@@ -9,3 +9,7 @@ I'm thinking I could have used a single functions w/ some recursion but this com
 ## Day 2
 
 Still catching up, still Ruby. Made a class for this one, I like it...
+
+## Day 3
+
+Recursion! This one was my favorite so far and stumped me for a bit. In my recursion I accidently did an extra assignment that threw off just a couple of the results. But I am very happy with the length of this solution.
