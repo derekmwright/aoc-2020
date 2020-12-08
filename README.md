@@ -17,3 +17,7 @@ Recursion! This one was my favorite so far and stumped me for a bit. In my recur
 ## Day 4
 
 So, I'll probably just stick with keeping this whole challenge in Ruby. This day's challenge got another Class thrown at it. I had fun setting up the validation logic on it. Overkill for the challenge? Maybe, but it seems to be able to scale and be extensible.
+
+## Day 5
+
+Its just binary conversions, this was a quick one. Ruby `slice_when` comes to the rescue again for partitioning arrays.
