@@ -21,3 +21,7 @@ So, I'll probably just stick with keeping this whole challenge in Ruby. This day
 ## Day 5
 
 Its just binary conversions, this was a quick one. Ruby `slice_when` comes to the rescue again for partitioning arrays.
+
+## Day 6
+
+Lots of text splitting / array manipulation, makes for ugly code. However, its pretty short and gets the job done quickly.
