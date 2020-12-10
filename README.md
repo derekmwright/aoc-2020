@@ -29,3 +29,7 @@ Lots of text splitting / array manipulation, makes for ugly code. However, its p
 ## Day 7
 
 Hit a few snags overthinking the recursiveness, reworked and simplified the function quite a few times and then cheated a little and realized I needed to subtract 1 to get rid of the 'shiny bag' count ...sigh.
+
+## Day 8
+
+Another fun one, there might have been a shorter way to solve this but I chose the route of making a copy and changing the command index and running the commands for each iteration until I got a success. Works but I havent benchmarked it so it will probably hit the brakes on massive datasets.
