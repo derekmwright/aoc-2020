@@ -25,3 +25,7 @@ Its just binary conversions, this was a quick one. Ruby `slice_when` comes to th
 ## Day 6
 
 Lots of text splitting / array manipulation, makes for ugly code. However, its pretty short and gets the job done quickly.
+
+## Day 7
+
+Hit a few snags overthinking the recursiveness, reworked and simplified the function quite a few times and then cheated a little and realized I needed to subtract 1 to get rid of the 'shiny bag' count ...sigh.
